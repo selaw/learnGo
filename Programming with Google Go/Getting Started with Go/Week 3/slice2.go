@@ -21,8 +21,6 @@ func main() {
 	for {
 		// Read input
 		fmt.Scan(&input)
-
-		// If 'X' was input, terminate loop
 		if input[0] == 'X' {
 			break
 		}
