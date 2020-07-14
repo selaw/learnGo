@@ -54,3 +54,8 @@ func main() {
 		go diningProblem(ph[i], forkLeft, forkRight)
 		forkLeft = forkRight
 	}
+	go diningProblem(ph[0], fork0, forkLeft)
+	dining.Wait() // wait for philosphers to finish
+	fmt.Println("Table empty")
+	fmt.Println("dining end")
+}
